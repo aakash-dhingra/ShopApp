@@ -85,7 +85,7 @@ mongoose.connect(process.env.DB_URL, {
 // seedDB();
 
 app.get('/',(req,res)=>{
-    res.send("Landing Page");
+    res.render('home');
 })
 
 
