@@ -6,8 +6,14 @@ const { isLoggedIn } = require('../middleware');
 
 
 router.get('/products',async (req,res)=>{
-    const products = await Product.find({});
-    res.render('products/index',{products});
+    try{
+        const products = await Product.find({});
+        res.render('products/index',{products});
+    }
+    catch(e){
+        
+        res.redirect('/error');
+    }
 })
 
 router.get('/products/:id', async(req,res)=>{
@@ -41,8 +47,15 @@ router.post('/products', isLoggedIn, async(req,res)=>{
 })
 
 router.get('/products/:id/edit',isLoggedIn, async(req,res)=>{
-    const product = await Product.findById(req.params.id);
-    res.render('products/edit',{product})
+    try{
+
+        const product = await Product.findById(req.params.id);
+        res.render('products/edit',{product})
+    }
+    catch(e){
+        
+        res.redirect('/error');
+    }
 })
 
 
