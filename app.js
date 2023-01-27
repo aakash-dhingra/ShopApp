@@ -16,6 +16,30 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 
 
+//firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDr2qClO2GmlhwbwlKOocLrZTGT7xTf558",
+  authDomain: "shopnpopp.firebaseapp.com",
+  projectId: "shopnpopp",
+  storageBucket: "shopnpopp.appspot.com",
+  messagingSenderId: "1049570681227",
+  appId: "1:1049570681227:web:90e0ed5d8c39bd8abd0f8e",
+  measurementId: "G-ED3HB832EB"
+};
+
+// Initialize Firebase
+const app1 = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app1);
+
+
 
 
 //routes
