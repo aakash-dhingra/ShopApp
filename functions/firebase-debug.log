@@ -1,0 +1,108 @@
+[debug] [2023-01-28T16:54:42.353Z] ----------------------------------------------------------------------
+[debug] [2023-01-28T16:54:42.354Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2023-01-28T16:54:42.354Z] CLI Version:   11.21.0
+[debug] [2023-01-28T16:54:42.354Z] Platform:      darwin
+[debug] [2023-01-28T16:54:42.354Z] Node Version:  v16.15.0
+[debug] [2023-01-28T16:54:42.355Z] Time:          Sat Jan 28 2023 22:24:42 GMT+0530 (India Standard Time)
+[debug] [2023-01-28T16:54:42.355Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-28T16:54:42.394Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-28T16:54:42.394Z] > authorizing via signed-in user (aakashdhingra1495@gmail.com)
+[debug] [2023-01-28T16:54:42.395Z] [iam] checking project shopnpopp for permissions ["firebase.projects.get"]
+[debug] [2023-01-28T16:54:42.395Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopnpopp:testIamPermissions [none]
+[debug] [2023-01-28T16:54:42.395Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopnpopp:testIamPermissions x-goog-quota-user=projects/shopnpopp
+[debug] [2023-01-28T16:54:42.396Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopnpopp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-28T16:54:44.056Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopnpopp:testIamPermissions 200
+[debug] [2023-01-28T16:54:44.057Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shopnpopp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-28T16:54:44.059Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp [none]
+[debug] [2023-01-28T16:54:44.735Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp 200
+[debug] [2023-01-28T16:54:44.736Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp {"projectId":"shopnpopp","projectNumber":"1049570681227","displayName":"shopnpopp","name":"projects/shopnpopp","resources":{"hostingSite":"shopnpopp"},"state":"ACTIVE","etag":"1_71628391-6472-4742-a072-412607e3ac40"}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-01-28T16:54:44.754Z] defaultcredentials: writing to file /Users/aakashdhingra/.config/firebase/aakashdhingra1495_gmail_com_application_default_credentials.json
+[debug] [2023-01-28T16:54:44.755Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/shopnpopp/sites 
+[debug] [2023-01-28T16:54:44.758Z] Setting GAC to /Users/aakashdhingra/.config/firebase/aakashdhingra1495_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/aakashdhingra/.config/firebase/aakashdhingra1495_gmail_com_application_default_credentials.json"}}
+[debug] [2023-01-28T16:54:44.759Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp/adminSdkConfig [none]
+[debug] [2023-01-28T16:54:45.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp/adminSdkConfig 200
+[debug] [2023-01-28T16:54:45.282Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp/adminSdkConfig {"projectId":"shopnpopp","storageBucket":"shopnpopp.appspot.com"}
+[debug] [2023-01-28T16:54:46.005Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/shopnpopp/sites 200
+[debug] [2023-01-28T16:54:46.005Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/shopnpopp/sites {"sites":[{"name":"projects/shopnpopp/sites/shopnpopp","defaultUrl":"https://shopnpopp.web.app","appId":"1:1049570681227:web:90e0ed5d8c39bd8abd0f8e","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-28T16:54:46.006Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp/webApps/1:1049570681227:web:90e0ed5d8c39bd8abd0f8e/config [none]
+[debug] [2023-01-28T16:54:47.635Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp/webApps/1:1049570681227:web:90e0ed5d8c39bd8abd0f8e/config 200
+[debug] [2023-01-28T16:54:47.636Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp/webApps/1:1049570681227:web:90e0ed5d8c39bd8abd0f8e/config {"projectId":"shopnpopp","appId":"1:1049570681227:web:90e0ed5d8c39bd8abd0f8e","storageBucket":"shopnpopp.appspot.com","apiKey":"AIzaSyDr2qClO2GmlhwbwlKOocLrZTGT7xTf558","authDomain":"shopnpopp.firebaseapp.com","messagingSenderId":"1049570681227","measurementId":"G-ED3HB832EB"}
+[debug] [2023-01-28T16:54:47.661Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp [none]
+[debug] [2023-01-28T16:54:48.354Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp 200
+[debug] [2023-01-28T16:54:48.354Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shopnpopp {"projectId":"shopnpopp","projectNumber":"1049570681227","displayName":"shopnpopp","name":"projects/shopnpopp","resources":{"hostingSite":"shopnpopp"},"state":"ACTIVE","etag":"1_71628391-6472-4742-a072-412607e3ac40"}
+[info] i  functions: Watching "/Users/aakashdhingra/Work/Projects/ShopApp/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/aakashdhingra/Work/Projects/ShopApp/functions\" for Cloud Functions..."}}
+[info] i  hosting[shopnpopp]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[shopnpopp]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[debug] [2023-01-28T16:54:48.443Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-01-28T16:54:48.748Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-28T16:54:48.748Z] Building nodejs source
+[debug] [2023-01-28T16:54:48.749Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-28T16:54:48.838Z] Serving at port 9005
+
+[debug] [2023-01-28T16:54:48.866Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-28T16:54:48.869Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-01-28T17:26:26.180Z] File /Users/aakashdhingra/Work/Projects/ShopApp/functions/app.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/aakashdhingra/Work/Projects/ShopApp/functions/app.js changed, reloading triggers"}}
+[debug] [2023-01-28T17:26:27.187Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-01-28T17:26:28.115Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-28T17:26:28.115Z] Building nodejs source
+[debug] [2023-01-28T17:26:28.116Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-28T17:26:28.219Z] Serving at port 9005
+
+[debug] [2023-01-28T17:26:28.247Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-28T17:26:28.250Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}

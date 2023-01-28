@@ -1,8 +1,8 @@
 const express = require('express');
 var router = express.Router();
-const Product = require('../models/product');
-const Review = require('../models/review');
-const { isLoggedIn } = require('../middleware');
+const Product = require('../../models/product');
+const Review = require('../../models/review');
+const { isLoggedIn } = require('../../middleware');
 
 
 router.get('/products',async (req,res)=>{

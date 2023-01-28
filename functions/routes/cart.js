@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { isLoggedIn } = require('../middleware');
-const Product = require('../models/product');
-const User = require('../models/user');
+const { isLoggedIn } = require('../../middleware');
+const Product = require('../../models/product');
+const User = require('../../models/user');
 
 
 router.get('/user/:userId/cart',isLoggedIn,async (req, res) => {
