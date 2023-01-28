@@ -2,6 +2,7 @@
   "name": "shopapp",
   "version": "1.0.0",
   "description": "E-Commerce Website",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
